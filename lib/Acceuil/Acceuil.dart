@@ -1,4 +1,4 @@
-// Acceuil.dart
+
 
 import 'package:flutter/material.dart';
 import 'package:activite_firebase/Acceuil/PartieTitre.dart';
@@ -17,7 +17,7 @@ class Acceuil extends StatefulWidget {
 }
 
 class _AcceuilState extends State<Acceuil> {
-  // La liste des rédacteurs est maintenant gérée ici
+ 
   //final List<Redacteur> _redacteurs = [];
 
     void _ajouterRedacteur() {
@@ -29,7 +29,7 @@ class _AcceuilState extends State<Acceuil> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        // ❌ Ne passez plus la liste en paramètre
+
         builder: (context) => const Infosredac(),
       ),
     );
