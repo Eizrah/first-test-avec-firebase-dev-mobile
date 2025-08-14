@@ -1,4 +1,4 @@
-// AjoutRedacteur.dart
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 //import 'package:activite_firebase/Modele/Redacteur.dart';
@@ -32,12 +32,12 @@ class _CorpsState extends State<Corps> {
   final TextEditingController _specRedac = TextEditingController();
 
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-void _validerAjout() async { // 👈 3. Rendre la fonction async
+void _validerAjout() async {
     String nom = _nomRedac.text.trim();
     String specialite = _specRedac.text.trim();
 
     if (nom.isNotEmpty && specialite.isNotEmpty) {
-      // 👇 4. Ajouter directement les données à Firestore
+     
       await _firestore.collection('redacteurs').add({
         'nom': nom,
         'specialite': specialite,
@@ -73,7 +73,7 @@ void _validerAjout() async { // 👈 3. Rendre la fonction async
             decoration: const InputDecoration(
               labelText: 'Spécialité',
               border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.psychology), // Icône plus pertinente
+              prefixIcon: Icon(Icons.psychology), 
             ),
           ),
           const SizedBox(height: 16.0),
