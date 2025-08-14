@@ -1,4 +1,4 @@
-// main.dart
+
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -19,9 +19,9 @@ class MonAppli extends StatelessWidget {
     return MaterialApp(
       title: 'Magazine',
       debugShowCheckedModeBanner: false,
-      // La page d'accueil est la seule route nécessaire ici pour commencer
+     
       home: const Acceuil(),
-      // Les routes dynamiques seront gérées avec Navigator.push
+   
       routes: {
         '/AjoutRedac': (context) => const Ajoutredacteur(),
       },
