@@ -27,7 +27,7 @@ class _ModifRedacState extends State<ModifRedac> {
     String specialite = _specRedac.text.trim();
 
     if (nom.isNotEmpty && specialite.isNotEmpty) {
-      // Crée une copie du rédacteur avec les nouvelles informations
+      // Création d'une copie du rédacteur avec les nouvelles informations
       final redacteurModifie = widget.redacteur.copyWith(
         nom: nom,
         specialite: specialite,
@@ -78,7 +78,7 @@ class _ModifRedacState extends State<ModifRedac> {
             ElevatedButton(
               onPressed: _enregistrerModifications,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue, // Couleur bleue pour la modification
+                backgroundColor: Colors.blue, 
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
                 textStyle: const TextStyle(
                   fontSize: 16.0,
