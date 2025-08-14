@@ -1,8 +1,8 @@
-// Redacteur.dart
+
 import 'package:uuid/uuid.dart';
 
 class Redacteur {
-  String? id; // UUID est une String, pas un int
+  String? id; 
   String nom;
   String specialite;
 
