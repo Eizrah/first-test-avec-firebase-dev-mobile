@@ -1,4 +1,4 @@
-// ModifRedac.dart
+
 
 import 'package:flutter/material.dart';
 import 'package:activite_firebase/Modele/Redacteur.dart';
